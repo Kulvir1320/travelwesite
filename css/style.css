@@ -71,6 +71,18 @@ nav li a {
    main{
      clear: left;
    }
+   section{
+     margin-left: auto;
+     margin-right: auto;
+     
+     margin: 0 1.5%;
+     width: 50%;
+   }
+   article{
+     float: right;
+     margin: 0 1.5%;
+     width: 30%;
+   }
 
  }
 @media only screen and (min-width: 860px){
@@ -99,6 +111,21 @@ nav li a {
     clear: left;
   }
   /* slide Show */
+.formclass{
+
+
+  border-style: double;
+}
+section{
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+article{
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
 
 
 }
