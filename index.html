@@ -5,6 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title></title>
+    <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
 
   </head>
   <body>
@@ -30,7 +82,147 @@
     </nav>
     <main>
       <div class="desktop">
-        evneet kaur
+
+
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+          <img src="images/banner1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="images/banner6.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="images/banner3.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="images/banner4.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="images/banner7.jpg" style="width:100%">
+
+        </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="row">
+          <div class="textoverimage"
+          style="background-image: url('home1.jpg');"
+          data-text="A weekend
+          trip away with the kids is an ideal way to learn and bond as a family. And it can also help you become an instant member of Booking.com‘s travel rewards programme, Genius.
+          With any two bookings, you’ll get at least 10 percent off for life.">
+      <!-- <img src="images/backlogin.jpeg" alt="sdfghjj" > -->
+      </div>
+
+        <div class="textoverimage"   style="background-image: url('home1.jpg');"
+        data-text="A weekend trip
+        away with the kids is an ideal way to learn and bond as a family. And it can also help you become an instant member of Booking.com‘s travel rewards programme, Genius.
+        With any two bookings, you’ll get at least 10 percent off for life.">
+          <!-- <img src="images/backlogin.jpeg" alt="sdfghjj"> -->
+
+
+        </div>
+        <div class="textoverimage"   style="background-image: url('home1.jpg');"
+        data-text="A weekend trip
+        away with the kids is an ideal way to learn and bond as a family. And it can also help you become an instant member of Booking.com‘s travel rewards programme, Genius.
+        With any two bookings, you’ll get at least 10 percent off for life.">
+          <!-- <img src="images/backlogin.jpeg" alt="sdfghjj"> -->
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="textoverimage"
+        style="background-image: url('home1.jpg');"
+        data-text="A weekend
+        trip away with the kids is an ideal way to learn and bond as a family. And it can also help you become an instant member of Booking.com‘s travel rewards programme, Genius.
+        With any two bookings, you’ll get at least 10 percent off for life.">
+    <!-- <img src="images/backlogin.jpeg" alt="sdfghjj" > -->
+    </div>
+
+      <div class="textoverimage"   style="background-image: url('home1.jpg');"
+      data-text="A weekend trip
+      away with the kids is an ideal way to learn and bond as a family. And it can also help you become an instant member of Booking.com‘s travel rewards programme, Genius.
+      With any two bookings, you’ll get at least 10 percent off for life.">
+        <!-- <img src="images/backlogin.jpeg" alt="sdfghjj"> -->
+
+
+      </div>
+      <div class="textoverimage"   style="background-image: url('home1.jpg');"
+      data-text="A weekend trip
+      away with the kids is an ideal way to learn and bond as a family. And it can also help you become an instant member of Booking.com‘s travel rewards programme, Genius.
+      With any two bookings, you’ll get at least 10 percent off for life.">
+        <!-- <img src="images/backlogin.jpeg" alt="sdfghjj"> -->
+
+
+      </div>
+    </div>
+        <!-- <div class="row">
+  <div class="column">
+    <img src="home1.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/home2.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/home3.jpg" alt="Mountains" style="width:100%">
+  </div>
+
+</div>
+<div class="row1">
+<div class="column1">
+<img src="images/home4.jpg" alt="Snow" style="width:100%">
+</div>
+<div class="column1">
+<img src="images/home5.jpg" alt="Forest" style="width:100%">
+</div>
+
+</div> -->
+</div>
+
+        <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+
 
       </div>
 
