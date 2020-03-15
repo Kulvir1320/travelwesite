@@ -1,7 +1,7 @@
 body {
   font-family: Tahoma, Geneva, sans-serif;
   color: #ffffff;
-  background: url('../../images/backlogin.jpeg');
+  background-image: url('backlogin.jpeg');
   background-size: cover;
 }
 .signin{
