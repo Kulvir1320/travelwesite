@@ -1,25 +1,25 @@
 body {
   font-family: Tahoma, Geneva, sans-serif;
   color: #ffffff;
-  background-image: url('backlogin.jpeg');
+  background-image: url('back.jpg');
   background-size: cover;
 }
 .signin{
   background: rgba(44,62,80,0.7);
   padding: 40px;
-  width:250px;
+  width:35%;
   margin: 0 auto;
-  margin-top: 80px;
-  margin-left: 180px;
-  height: 400px;
+  margin-top: 20%;
+  margin-left: 32%;
+  height: 500px;
 }
 form {
-  width: 240px;
+  width: 100%;
   text-align: center;
 
 }
 input {
-  width: 240px;
+  width: 70%;
   text-align: center;
   background: transparent;
   border: none;

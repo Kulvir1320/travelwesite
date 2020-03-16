@@ -1,27 +1,27 @@
 body {
   font-family: Tahoma, Geneva, sans-serif;
   color: #ffffff;
-  background: url('images/backlogin.jpeg');
+  background: url('back.jpg');
   background-size: cover;
 }
 .signup{
    background: rgba(44,62,80,0.9);
    opacity: 0.85em;
    padding: 40px;
-   width: 250px;
+   width:35%;
    height: 430px;
-   margin-top: 90px;
-   margin-left: 180px;
+   margin-top: 20%;
+   margin-left: 32%;
    margin:  0 auto;
 
 }
 form {
-  width: 240px;
+  width: 100%;
   text-align: center;
 
 }
     input{
-  width: 240px;
+  width: 70%;
   text-align: center;
   background: transparent;
   border: none;
