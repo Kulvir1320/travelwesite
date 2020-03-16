@@ -97,6 +97,24 @@ nav li a {
   color: #ffffff;
   text-decoration: none;
 }
+.column {
+  /* float: left; */
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  border: 1px solid #FA8072;
+   border-radius: 2em 2em;
+}
+
+/* Clear floats after the columns */
+.rowP:after {
+  content: "";
+  display: table;
+  /* clear: both; */
+}
+.para{
+  text-align: center;
+}
 
 
  @media only screen and (min-width: 685px){
@@ -141,6 +159,74 @@ nav li a {
      float: right;
      margin: 0 1.5%;
      width: 30%;
+   }
+   .row1{
+     display: none;
+   }
+   .textoverimage{
+     flex: 33.33%;
+     padding: 5px;
+     position: relative;
+     height: 250px;
+
+     /* float: left; */
+     margin: 4px;
+     background-size: 100%;
+     background-position: center;
+     transition: 0.5s;
+
+   }
+
+   .textoverimage:hover{
+     background-size: 110%;
+
+
+   }
+   .textoverimage:after {
+     position: absolute;
+     top:87%;
+     bottom: 0;
+     right:0;
+    white-space: pre-wrap;
+   overflow: hidden;
+   background-color: rgba(0,0,0,0.3);
+   color: #fff;
+   padding: 0.8px;
+
+     content: attr(data-text);
+     transition: 0.5s;
+   }
+   .textoverimage:hover:after {
+
+     top:0;
+     padding: 8px;
+     background-color: rgba(0,0,0,0.6);
+
+   }
+   .textoverimage:first-line {
+     color: #fff;
+     font-weight: bold;
+     font-size: 1.5em;
+
+
+   }
+   .column {
+     float: left;
+     width: 33.33%;
+     padding: 10px;
+     height: 150px;
+     border: 1px solid #FA8072;
+      border-radius: 2em 2em;
+   }
+
+   /* Clear floats after the columns */
+   .rowP:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   .para{
+     text-align: center;
    }
 
  }
