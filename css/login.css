@@ -34,7 +34,7 @@ input {
 }
   input[type=button]{
     border: none;
-    width: 190px;
+    width: 40%;
     background: white;
     color: #000;
     font-size: 16px;

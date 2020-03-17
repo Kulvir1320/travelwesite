@@ -8,7 +8,9 @@ body {
 vertical-align: middle;
 
 }
-
+.desktop{
+  display: none;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -115,9 +117,26 @@ nav li a {
 .para{
   text-align: center;
 }
+article{
+
+  background-color: HoneyDew;
+  background-color: HoneyDew;
+  border-radius: 2em 2em;
+ text-align: center;
+ box-shadow: 0 0 20px #000000b3;
+  margin: 0 1.5%;
+  width: 100%;
+  height: 500px;
+}
+article p {
+  margin-top: 20px;
+}
 
 
  @media only screen and (min-width: 685px){
+   .desktop{
+     display: inline;
+   }
 
    header a img{
      float: left;
@@ -158,12 +177,56 @@ nav li a {
      margin-right: auto;
 
      margin: 0 1.5%;
-     width: 50%;
+     width: 100%;
+     background-color: HoneyDew;
+     border-radius: 2em 2em;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
    }
    article{
-     float: right;
+
+     background-color: HoneyDew;
+     background-color: HoneyDew;
+     border-radius: 2em 2em;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
      margin: 0 1.5%;
-     width: 30%;
+     width: 100%;
+   }
+   article p {
+     margin-top: 20px;
+   }
+   .txtb {
+     border:1px solid gray;
+     margin 8px 0;
+     padding: 12px 18px;
+     border-radius: 8px;
+   }
+   .txtb label {
+     display: block;
+     text-align: left;
+     color: #333;
+     text-transform: uppercase;
+     font-size: 14px;
+
+   }
+   .txtb input, .txtb textarea {
+     width: 100%;
+     border: none;
+     background: none;
+     outline: none;
+     font-size: 18px;
+     margin-top: 6px;
+
+   }
+   .btn {
+     display: block;
+     background-color: PowderBlue;
+     padding: 14px 0;
+     color: #1d1d1c;
+     margin-top: 8px;
+     width:100%;
+     font-size: 19px;
    }
    .row1{
      display: none;
