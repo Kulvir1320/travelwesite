@@ -140,7 +140,7 @@ article p {
 /* footer */
 .s-m {
   position: absolute;
-  top: 10%;
+
   width: 100%;
   text-align: center;
 
@@ -166,6 +166,40 @@ article p {
 .foot:hover i {
   transform: scale(1.3);
   color: #f1f1f1;
+
+}
+.foot::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+
+}
+.foot:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+
+}
+@@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+
+  } 50% {
+    left: 10%;
+    top: -30%;
+
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+
+  }
 
 }
 #copyright{
