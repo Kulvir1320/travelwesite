@@ -22,6 +22,7 @@ vertical-align: middle;
   max-width: 100%;
   position: relative;
   margin: auto;
+
 }
 
 
@@ -92,8 +93,8 @@ img {
 
 /* add style for the list items in the nav */
 #nav2 li {
-  background-color: #9d9d93;
-  border-radius: 2em;
+  /* background-image: radial-gradient(#ffffff, #FFF0F5); */
+  /* border-radius: 2em; */
   list-style-type: none;
   margin: 0.3em;
   padding: 0.4em;
@@ -101,7 +102,7 @@ img {
 
 /* add styles fro teh anchor tag inside the li */
 #nav2 li a {
-  color: #ffffff;
+  color: #ff7f50;
   text-decoration: none;
 }
 .column {
@@ -384,7 +385,7 @@ article p {
   #nav2 li a {
     display: inline-block;
     padding: 0.7em;
-    text-shadow: 0.2em 0.1em #3d3d35;
+    /* text-shadow: 0.2em 0.1em #3d3d35; */
   }
   main{
     clear: left;
