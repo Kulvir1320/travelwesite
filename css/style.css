@@ -174,23 +174,28 @@ article p {
      display: inline;
    }
 
-   #nav1{
-     background-color: #FFF8DC;
-     padding-left: 50em;
+   header a img{
+     float: left;
+     height: 150px;
+     width: 150px;
    }
+
+   #nav1{
+     float: right;
+   }
+
+#nav2{
+
+  clear: left;
+}
+
+
    img {
      float: right;
      height: 250px;
      width:20%;
    }
-   #nav2 {
-     float: left;
-     font-family: Georgia, "Times New Roman", serif;
-     font-size: 2em;
-     font-weight: bold;
-     text-align: center;
-     margin-top: 2em;
-   }
+
    nav li {
      display: inline;
      float: left;
@@ -331,6 +336,8 @@ article p {
  }
 @media only screen and (min-width: 860px){
 
+
+
   nav ul {
     margin: 0;
     padding-left: 0.5%;
@@ -344,6 +351,8 @@ article p {
     padding: 0;
     width: 25%;
   }
+
+
 
   /* styles for the links in the nav */
   nav li a {
