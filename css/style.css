@@ -81,7 +81,29 @@ img {
   font-size: 1.25em;
   font-weight: bold;
   text-align: center;
+  background-image: radial-gradient(#ffffff, #FFF0F5);
 
+}
+#nav3{
+  display: none;
+
+}
+#nav3 li{
+  display: block;
+}
+#nav2 :hover{
+  color: #1e90ff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.dropdown:hover #nav3{
+  display: block;
 }
 
 /* add styles for the unordered list in teh nav */
@@ -98,6 +120,8 @@ img {
   list-style-type: none;
   margin: 0.3em;
   padding: 0.4em;
+  background-image: radial-gradient(#ffffff, #FFF0F5);
+
 }
 
 /* add styles fro teh anchor tag inside the li */

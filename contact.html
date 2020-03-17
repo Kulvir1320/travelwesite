@@ -3,50 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cont.css">
     <title></title>
 
   </head>
   <body style="background-image:url(back.jpg);">
       <div id="container">
-    <header>
-    <a href="index.html"><img src="images/logo.png" alt="Fitness Club Logo"></a>
-  </header>
-  <!-- <div class="nav1">
-  <nav id="nav1">
-    <ul>
-      <li><a href="index.html">Login/Register</a></li>
-      <li><a href="about.html">My List</a></li>
-  </nav>
-  </div> -->
-  <nav id = "nav2">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="class.html">Services</a></li>
+        <nav id = "nav2">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <div class="dropdown">
+                <li><a href="register.html">Services</a>
+                  <nav id = "nav3">
+                    <ul>
+                      <li>hotels</li>
+                      <li>flights</li>
+                      <li>tours</li>
+                    </ul>
 
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+                  </nav>
+                </li>
+              </div>
+
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
     <main>
-    <div class="desktop"><section>
+    <div class="desktop">
+      <section>
         <h2>Ready to get started? Contact us today.</h2>
         <form class="formclass" action="index.html" method="post">
           <div class="txtb">
-            <label for="fName">First Name</label>
+            <label for="fName"> <strong> First Name</strong></label>
           <input type="text" name="fName" id="fName">
           </div>
           <div class="txtb">
-            <label for="fName">First Name</label>
+            <label for="fName"><strong> Last Name</strong></label>
           <input type="text" name="fName" id="fName">
           </div>
           <div class="txtb">
-            <label for="email">Email</label>
+            <label for="email"><strong> Email</strong></label>
             <input type="email" name="email" id="email">
           </div>
 
            <div class="txtb">
-             <label for="message">Message</label><br>
+             <label for="message"><strong>Message</strong></label><br>
              <textarea name="message" rows="5" cols="80"></textarea>
            </div>
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-  
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <title></title>
 
@@ -29,7 +29,18 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="register.html">Services</a></li>
+        <div class="dropdown">
+          <li><a href="register.html">Services</a>
+            <nav id = "nav3">
+              <ul>
+                <li>hotels</li>
+                <li>flights</li>
+                <li>tours</li>
+              </ul>
+
+            </nav>
+          </li>
+        </div>
 
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -172,6 +183,23 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 4000); // Change image every 2 seconds
         }
+
+        window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav2");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
         </script>
 
     </main>
