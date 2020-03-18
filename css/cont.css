@@ -116,7 +116,7 @@ body {
    main{
      clear: left;
    }
-   section{
+   .messageform {
 
      margin-top: 10%;
      /* margin-left: auto;
@@ -130,7 +130,7 @@ body {
     box-shadow: 0 0 20px #000000b3;
 
    }
-   article{
+   .info{
 
      /* background-color: HoneyDew; */
 
@@ -140,7 +140,7 @@ body {
      margin: 0 1.5%;
      width: 100%;
    }
-   article p {
+   .info p {
      margin-top: 20px;
    }
    .txtb {
@@ -223,7 +223,7 @@ body {
   /* slide Show */
 
 
-section{
+.messageform {
   float: left;
   margin: 5% 1.5%;
   width: 63%;
@@ -234,7 +234,7 @@ section{
  box-shadow: 0 0 20px #000000b3;
 }
 
-section form{
+.messageform form{
   margin: 1%;
 }
 .txtb {
@@ -268,7 +268,7 @@ section form{
   padding: 2%;
   font-size: 19px;
 }
-article{
+.info{
   float: right;
   margin: 5% 1.5%;
   width: 30%;

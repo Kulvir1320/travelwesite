@@ -1,13 +1,46 @@
 .photo {
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  background-color: HoneyDew;
+  border-radius: 2em 2em;
+  width: 30%;
+
+
   float: left;
-  margin-right: 20px;
+  margin-left: 5%;
+  margin-top: 5%;
+
+}
+body{
+  background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+}
+.photo img {
+  height: 100%;
+  width: 100%;
+
 }
 .info {
+  background-color: HoneyDew;
+  border-radius: 2em 2em;
   float: right;
   margin: 0 1.5%;
   width: 59%;
+  margin-top: 2%
+}
+.info p {
+  margin-left: 2em;
+}
+article h3 {
+  text-align: center;
+}
+.heading {
+  background-image: radial-gradient(#ffffff, #FFF0F5);
+  height: 100px;
+
+}
+.heading h2{
+  margin-left: 10px;
+}
+.heading p {
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
 }
