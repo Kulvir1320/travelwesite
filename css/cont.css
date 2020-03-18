@@ -15,6 +15,8 @@ body {
 }
 
 
+
+
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
@@ -84,6 +86,10 @@ body {
 
    .desktop{
      display: inline;
+   }
+
+   .mobile{
+     display: none;
    }
 
 
@@ -222,10 +228,36 @@ body {
   }
   /* slide Show */
 
+  table {
+      border: 0.1em solid #000000;
+      border-collapse: collapse;
+      margin-left: 0.1em;
+      margin-right: 0.1em;
+      width: 100%;
+    }
+
+    /* styles for the th and td */
+    th, td {
+      border: 0.1em solid #1E90FF;
+      padding: 0.1em;
+    }
+
+    /* styles for the th */
+    th {
+      background-color: #1E90FF;
+      color: #ffffff;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
 
 section{
   float: left;
-  margin: 5% 1.5%;
+  margin: 5% 1%;
   width: 63%;
   height: 580px;
   /* background-color: HoneyDew; */
@@ -235,7 +267,8 @@ section{
 }
 
 section form{
-  margin: 1%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .txtb {
   border:1px solid gray;
@@ -270,8 +303,8 @@ section form{
 }
 article{
   float: right;
-  margin: 5% 1.5%;
-  width: 30%;
+  margin: 5% 1%;
+  width: 32%;
   height: 580px;
 }
 
