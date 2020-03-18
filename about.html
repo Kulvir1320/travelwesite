@@ -2,9 +2,49 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/about.css">
+
     <title></title>
   </head>
   <body>
 
+    <header>
+      <img src="images/b.jpg" alt="ihkj">
+      <p>Travel with us around the WORLD</p>
+
+    </header>
+
+
+  <nav id = "navbar">
+    <ul>
+      <li> <a href="index.html">Home</a> </li>
+      <li> <a href="about.html">About</a> </li>
+      <li> <a href="contact.html">Contact</a> </li>
+      <li> <a href="signup.html">LogIn</a> </li>
+      <li> <a href="mylist.html">My List</a> </li>
+    </ul>
+  </nav>
+
+  <script>
+
+  window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+navbar.classList.add("sticky")
+} else {
+navbar.classList.remove("sticky");
+}
+}
+
+  </script>
   </body>
 </html>

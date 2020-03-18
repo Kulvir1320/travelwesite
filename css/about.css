@@ -1,0 +1,103 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+
+}
+
+header{
+  position: relative;
+}
+header img{
+
+  width: 100%;
+}
+
+header p {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-size: 3em;
+  color: #ffffff;
+  opacity: 70%;
+}
+
+
+#navbar {
+  float: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  /* background-image: radial-gradient(#ffffff, #FFF0F5); */
+
+}
+
+#navbar :hover{
+  color: #1e90ff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#navbar ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* add style for the list items in the nav */
+#navbar li {
+  /* background-image: radial-gradient(#ffffff, #FFF0F5); */
+  /* border-radius: 2em; */
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0.4em;
+  background-image: radial-gradient(#ffffff, #FFF0F5);
+
+}
+
+/* add styles fro teh anchor tag inside the li */
+#navbar li a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 685px){
+
+
+
+
+}
+
+@media only screen and (min-width: 860px){
+
+  #navbar{
+    display: inline;
+    float: left;
+  }
+
+
+  #navbar li{
+    display: inline;
+    background-image: #ffffff;
+    border-radius: 2em 2em;
+  }
+
+  #navbar{
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+
+  }
+
+
+}
