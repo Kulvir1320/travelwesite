@@ -64,17 +64,22 @@ article h3 {
 
   }
   nav li{
-    float: right;
+    float: left;
     display: inline;
-    margin-right: 2%;
+    margin-left: 0;
     font-size: 1.5em;
-    padding-left: 20px;
+    padding-left: 1%;
 
   }
   nav li a{
     color: #ffffff;
     text-decoration: none;
   }
+
+  nav ul li :hover{
+    color: #1e90ff;
+  }
+
 
   .heading{
     position: absolute;
