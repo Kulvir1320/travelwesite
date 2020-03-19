@@ -1,7 +1,7 @@
 .photo {
-  background-color: HoneyDew;
+
   border-radius: 2em 2em;
-  width: 30%;
+  width: 29%;
 
 
   float: left;
@@ -44,7 +44,7 @@ article h3 {
 .heading p {
   margin-left: 10px;
   font-size: 20px;
-  color: white;
+  
 }
 @media only screen and (min-width: 860px){
 
