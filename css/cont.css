@@ -266,14 +266,11 @@ body {
  box-shadow: 0 0 20px #000000b3;
 }
 
-<<<<<<< HEAD
+
 section form{
   margin-left: 0.5em;
   margin-right: 0.5em;
-=======
-.messageform form{
-  margin: 1%;
->>>>>>> 7a4ddbd2b3c122b9a6a77b436c5cdde6eb021cf0
+
 }
 .txtb {
   border:1px solid gray;

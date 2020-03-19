@@ -32,15 +32,56 @@ article h3 {
   text-align: center;
 }
 .heading {
-  background-image: radial-gradient(#ffffff, #FFF0F5);
+
   height: 100px;
+  margin-top: 5%;
 
 }
 .heading h2{
   margin-left: 10px;
+
 }
 .heading p {
   margin-left: 10px;
   font-size: 20px;
   color: white;
+}
+@media only screen and (min-width: 860px){
+
+  .navigationhotel{
+    margin-top: 2%;
+  }
+  img{
+    width: 100%;
+
+  }
+
+
+  nav{
+    display: inline;
+
+
+  }
+  nav li{
+    float: right;
+    display: inline;
+    margin-right: 2%;
+    font-size: 1.5em;
+    padding-left: 20px;
+
+  }
+  nav li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .heading{
+    position: absolute;
+    top: 2%;
+    left: 30%;
+
+    opacity: 80%;
+  }
+
+
 }
