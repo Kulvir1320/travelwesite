@@ -1,0 +1,59 @@
+.para1{
+  float: left;
+  width: 33%;
+  border-radius: 0 5em 5em 5em;
+  box-shadow: 1em 1em 1em #4c4f4d;
+}
+.para1 h2 {
+  text-align: center;
+}
+.para1 p {
+  text-align: center;
+  font-size: 1.5em;
+}
+.main2 {
+  clear: both;
+  width: 80%;
+  border-style: solid;
+  padding: 20px;
+  margin: auto;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  border-style: groove;
+}
+.column:hover{
+  background-color: MintCream;
+   transform: scale(1.1);
+}
+.count{
+  clear: both;
+  width: 50%;
+  float: left;
+
+}
+.rate {
+  width: 50%;
+  float: right;
+  text-align: right;
+
+
+}
+.rate p {
+  margin-top: -1em;
+
+}
+.count p{
+    margin-top: -1em;
+}
