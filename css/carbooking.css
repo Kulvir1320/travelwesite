@@ -58,5 +58,28 @@ h1{
   }
 
 
->>>>>>> d7aeba6b89f48d13f8692cdc47ba253eaf403257
+  .hotelDetails{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+  }
+
+  .hotelDetails label{
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: #000000;
+  }
+  .hotelDetails input{
+    font-size: 1em;
+    border-radius: 0.5em 0.5em;
+  }
+  .hotelDetails button{
+    position: absolute;
+    /* top: 50%; */
+    left: 40%;
+    font-size: 1.5em;
+    border-radius: 0.5em 0.5em;
+  }
 }
