@@ -1,4 +1,9 @@
 
+body {
+  font-family: Verdana, sans-serif;
+  background-image: radial-gradient(#2f4f4f,#000000);
+
+}
 .banner {
   text-align: center;
 }
@@ -55,6 +60,7 @@ h1{
     padding-top: 0.5em;
     font-size: 20px;
 }
+<<<<<<< HEAD
 .cars {
   margin-top: 20px;
 }
@@ -99,4 +105,26 @@ h1{
 .p3 button{
   height: 50px;
   width: 30%;
+=======
+
+@media only screen and (min-width: 860px){
+
+  
+  nav{
+    display: inline;
+
+  }
+  nav li{
+    display: inline;
+    font-size: 1.5em;
+    padding-left: 20px;
+
+  }
+  nav li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+>>>>>>> d7aeba6b89f48d13f8692cdc47ba253eaf403257
 }

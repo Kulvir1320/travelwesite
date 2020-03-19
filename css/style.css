@@ -75,6 +75,30 @@ img {
   text-align: center;
 } */
 
+#nav1 {
+  /* float: block; */
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+#nav1 ul{
+  width: 200px;
+  display: flow-root;
+}
+
+#nav1 li a {
+  color: #ff7f50;
+  text-decoration: none;
+
+}
+
+#nav1 :hover{
+  color: #1e90ff;
+}
+
 #nav2 {
   float: block;
   font-family: Georgia, "Times New Roman", serif;
