@@ -44,7 +44,7 @@ article h3 {
 .heading p {
   margin-left: 10px;
   font-size: 20px;
-  
+
 }
 @media only screen and (min-width: 860px){
 
@@ -79,8 +79,13 @@ article h3 {
     position: absolute;
     top: 2%;
     left: 30%;
-
     opacity: 80%;
+  }
+
+  .hotelDetails{
+    position: absolute;
+    top: 40%;
+    left: 20%;
   }
 
 
