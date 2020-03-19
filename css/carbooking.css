@@ -55,3 +55,48 @@ h1{
     padding-top: 0.5em;
     font-size: 20px;
 }
+.cars {
+  margin-top: 20px;
+}
+.p1{
+  margin-top: 20px;
+  float: left;
+  width:33%;
+  text-align: center;
+}
+.p2{
+  margin-top: 20px;
+  float: left;
+  width:33%;
+  text-align: center;
+}
+.p3{
+  margin-top: 20px;
+  float: left;
+  width:33%;
+  text-align: center;
+}
+.p1 img{
+  height: 15%;
+  width: 30%;
+}
+
+.p1 i {
+
+  font-size: 25px;
+  margin-left: 1em;
+}
+
+.p2  p{
+  margin-top: -0.7em;
+}
+.p3 h1 {
+  text-align: right;
+}
+.p3 p {
+  text-align: right;
+}
+.p3 button{
+  height: 50px;
+  width: 30%;
+}
