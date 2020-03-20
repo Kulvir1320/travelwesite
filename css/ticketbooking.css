@@ -1,7 +1,48 @@
 
 body{
-  background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+    background-image: radial-gradient(#ffffff, #FFF0F5);
 }
+.mobile {
+  display: inline;
+}
+.desktop{
+  display: none;
+
+}
+.bannerdesktop {
+  display: none;
+}
+.logo{
+  text-align: center;
+  color: #0080ff;
+    font-size: 15px;
+}
+.icon-bar {
+  float:left;
+  width: 25%;
+  /* color: #3498db; */
+  background-color: #E0FFFF;
+}
+.icon-bar i {
+  color: #3498db;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #87CEFA;
+
+
+
+}
+
 nav{
   display: inline;
 
@@ -29,10 +70,12 @@ nav ul li :hover{
 
 .para1{
 
-  float: left;
-  width: 33%;
+
+  width: 100%;
+  border-style: double;
   border-radius: 0 5em 5em 5em;
   box-shadow: 1em 1em 1em #4c4f4d;
+   background-image: radial-gradient(#b3daff, #ffe6cc);
 }
 .para1 h2 {
   text-align: center;
@@ -87,7 +130,39 @@ nav ul li :hover{
 .count p{
     margin-top: -1em;
 }
+.ticketsDetails{
+  /* position: absolute; */
+  /* top: 80%;
+  left: 40%; */
+  height: 200px;
+  border-style: dotted;
+}
+.form {
+  margin-top: 20px;
+  margin-left: 2em;
+}
+.ticketsDetails label{
+  font-size: 1.5em;
+  font-style: oblique;
+  font-weight: bolder;
+  color: Black;
+  text-shadow: #000000;
+}
+.ticketsDetails input{
+  font-size: 1em;
+  border-radius: 0.5em 0.5em;
+}
+.ticketsDetails button{
+  /* position: absolute; */
+  /* top: 50%; */
+  margin-left: 40%;
+  /* left: 40%; */
+  font-size: 1.5em;
+  border-radius: 0.5em 0.5em;
+}
+
 .s-m {
+  clear: both;
   position: absolute;
 
   width: 100%;
@@ -159,7 +234,109 @@ nav ul li :hover{
   color: Black;
 }
 
+@media only screen and (min-width: 685px){
+  .mobile {
+    display: none;
+  }
+  .desktop{
+    display: inline;
+
+  }
+  .bannerdesktop {
+    display: none;
+  }
+
+  .navigationtickets{
+    margin-top: 2%;
+  }
+  img{
+    width: 100%;
+    margin-top: 1%
+
+
+  }
+
+
+  nav{
+    display: inline;
+    /* position: absolute; */
+    /* top: 2%;
+    left: 2%; */
+
+
+  }
+  nav li{
+    float: left;
+    display: inline;
+    margin-left: 2%;
+    font-size: 1.7em;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #ff7f50;
+    border-radius: 2em 2em;
+    opacity: 90%;
+
+  }
+  nav li a{
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+
+  nav ul li :hover{
+    color: #1e90ff;
+  }
+
+
+
+  .ticketsDetails{
+
+    height: 200px;
+    border-style: dotted;
+  }
+  .form {
+    margin-top: 20px;
+    margin-left: 2em;
+  }
+
+  .ticketsDetails label{
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+    color: Black;
+    text-shadow: #000000;
+  }
+  .ticketsDetails input{
+    font-size: 1em;
+    border-radius: 0.5em 0.5em;
+  }
+  .ticketsDetails button{
+    position: absolute;
+    /* top: 50%; */
+    margin-left: 40%;
+    font-size: 1.5em;
+    border-radius: 0.5em 0.5em;
+  }
+
+
+
+
+}
 @media only screen and (min-width: 860px){
+  body{
+    background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop{
+    display: inline;
+
+  }
+  .bannerdesktop {
+    display: inline;
+  }
+
 
   .navigationtickets{
     margin-top: 2%;
@@ -190,6 +367,7 @@ nav ul li :hover{
     background-color: #ff7f50;
     border-radius: 2em 2em;
     opacity: 90%;
+
 
   }
   nav li a{
@@ -224,12 +402,26 @@ nav ul li :hover{
   .ticketsDetails button{
     position: absolute;
     /* top: 50%; */
-    left: 40%;
+  margin-left: 40%;
     font-size: 1.5em;
     border-radius: 0.5em 0.5em;
   }
+  .para1{
 
-  
+    float: left;
+    width: 33%;
+    border-radius: 0 5em 5em 5em;
+    box-shadow: 1em 1em 1em #4c4f4d;
+  }
+  .para1 h2 {
+    text-align: center;
+  }
+  .para1 p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+
 
 
 }
