@@ -146,6 +146,7 @@ function userlogIn(){
 
 
   let openRequest = indexedDB.open("DB_traveldatabase", 3);
+
    openRequest.onupgradeneeded = function() {
        console.log("upgrade called")
 
@@ -173,7 +174,16 @@ function userlogIn(){
          let transaction = db.transaction("userdata", "readwrite");
          let t = transaction.objectStore("userdata");
 
+         // let ltrans = db.transaction("userlogedin", "readwrite");
+         // let lt = ltrans.objectStore("userlogedin");
+         //
          let req = t.get(uname)
+         // let data={
+         //   id: uname,
+         //   lastname: ""
+         // }
+         //
+         // let r = lt.add(data);
 
          req.onsuccess = function() {
             console.log(req.result)
@@ -181,8 +191,13 @@ function userlogIn(){
             if(recieved == null){
               alert("user not registered!!!!")
             }else if (p == recieved.password) {
-              window.location = "index.html";
-              alert("login succesful")
+
+
+               saveLoginUser(uname);
+
+
+
+
 
             }else {
               alert("wrong password")
@@ -203,9 +218,63 @@ function userlogIn(){
 
 }
 
+
+function saveLoginUser(uname){
+
+
+let openRequest = indexedDB.open("DB_traveldatabase", 3);
+openRequest.onupgradeneeded = function() {
+
+  console.log("upgrade called")
+};
+
+openRequest.onerror = function() {
+
+  console.log("error called")
+
+};
+
+
+openRequest.onsuccess = function() {
+     let db = openRequest.result;
+
+       console.log("success called")
+
+
+     db.onversionchange = function() {
+     db.close();
+   };
+
+   // code to save login username
+   let transaction = db.transaction("userdata", "readwrite");
+   let t = transaction.objectStore("userdata");
+
+   let r = t.put({id: "logInUser", username: uname});
+
+   r.onsuccess = function(){
+
+     alert("login succesful");
+    // window.location.href = "index.html";
+
+
+   };
+
+
+
+
+
+}// end of success
+
+
+openRequest.onblocked = function() {
+};
+
+
+}//end of function
+
 function bookhotelfunc(){
 
-  console.log(loginuser);
+
 
    let openRequest = indexedDB.open("DB_traveldatabase", 3);
 
@@ -237,38 +306,50 @@ function bookhotelfunc(){
          let transaction = db.transaction("userdata", "readwrite");
          let t = transaction.objectStore("userdata");
 
-         let r = t.get(loginuser);
 
-         if(hname == "" & hperson == "" & hotelin == "" & hotelout == ""){
-           alert("empty!!!!!!")
-         }else {
+         let r = t.get("logInUser");
+
+         r.onsuccess = function(){
+           let reslt = r.result;
+           let loginame = reslt.username;
+           console.log(loginame);
+
+           if(hname == "" & hperson == "" & hotelin == "" & hotelout == ""){
+             alert("empty!!!!!!")
+           }else {
+
+             // let newreq = [hname,hperson,hotelin,hotelout];
+             // oldreq.push(newreq);
+
+           let Newdata={
 
 
+              id: loginame,
+              // lastname: r.lastname,
+              // password: r.password,
 
-         let Newdata={
-            id: loginuser,
-            lastname: r.lastname,
-            password: r.password,
+              requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
+            + hotelout]
+           }
+           let req = t.put(Newdata);
 
-            requests: ["r1","r2","r3"]
+           req.onsuccess = function() {
+             alert("booking succesful")
+              console.log(req.result)
+              console.log(Newdata);
 
+           };
+           req.onerror = function() {
+                       console.log("Error", request.error);
+                }
+        };
 
          }
-         let req = t.put(Newdata);
 
-         req.onsuccess = function() {
-            console.log(req.result)
-            console.log(Newdata);
 
-         };
-         req.onerror = function() {
-                     console.log("Error", request.error);
-              }
-      };
+
 
     }
-
-
        openRequest.onblocked = function() {
       };
 }
