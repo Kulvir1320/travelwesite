@@ -49,7 +49,7 @@ article h3 {
 }
 .s-m {
   clear: both;
-  position: absolute;
+  /* position: absolute; */
 
   width: 100%;
   text-align: center;

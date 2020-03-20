@@ -1,19 +1,84 @@
 
 body {
   font-family: Verdana, sans-serif;
-  background-image: radial-gradient(#2f4f4f,#000000);
+  background-image: radial-gradient(#ffffff, #FFF0F5);
 
+}
+.mobile {
+  display: inline;
+}
+.desktop{
+  display: none;
+
+}
+.navdesktop{
+  display: none;
 }
 .banner {
   text-align: center;
 }
+.logo{
+  text-align: center;
+  color: #0080ff;
+    font-size: 15px;
+}
+.icon-bar {
+  float:left;
+  width: 25%;
+  /* color: #3498db; */
+  background-color: #E0FFFF;
+}
+.icon-bar i {
+  color: #3498db;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #87CEFA;
+
+
+
+}
+.carDetails{
+  height: 200px;
+  border-style: dotted;
+}
+.form {
+  margin-top: 40px;
+  margin-left: 1em;
+}
+.carDetails label{
+  font-size: 1.5em;
+  font-style: oblique;
+  font-weight: bolder;
+  color: Black;
+  text-shadow: #000000;
+}
+.carDetails input{
+  font-size: 1em;
+  border-radius: 0.5em 0.5em;
+}
+.carDetails button{
+  position: absolute;
+  /* top: 50%; */
+  left: 40%;
+  font-size: 1.5em;
+  border-radius: 0.5em 0.5em;
+}
 h1{
   text-align: center;
-  color: white;
+  color: Black;
 }
 .para1{
-  float: left;
-  width: 33.3%;
+
   height: 300px;
   border-radius: 0 5em 5em 5em;
   box-shadow: 1em 1em 1em #4c4f4d;
@@ -21,21 +86,23 @@ h1{
 
 .icon i {
   color: #3498db;
-  padding-left: 5.7em;
+  padding-left: 8.5em;
   font-size: 35px;
+  margin-top: 20px;
 
 }
 .para1 h2  {
   text-align: center;
-    color: white;
+    color: Black;
 
 }
 .para1 p {
   text-align: center;
   font-size: 20px;
-    color: white;
+    color: Black;
 }
 .s-m {
+  margin-top: 20px;
   position: absolute;
 
   width: 100%;
@@ -104,13 +171,127 @@ h1{
   text-align: center;
 }
 #copyright p {
-  color: White;
+  color: Black;
 }
 
 
 
 
+@media only screen and (min-width: 685px){
+  .desktop{
+    display: none;
+  }
+  .navdesktop{
+    display: inline;
+  }
+  .mobile{
+    display: none;
+  }
+  h1{
+    text-align: center;
+    color: Black;
+  }
+
+  nav{
+    display: inline;
+
+  }
+  nav li{
+    display: inline;
+    font-size: 1.5em;
+    padding-left: 10px;
+
+  }
+  nav li a{
+    color:Black;
+    text-decoration: none;
+  }
+
+
+
+  nav ul li :hover{
+    color: #1e90ff;
+  }
+  .para1{
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    border-radius: 0 5em 5em 5em;
+    box-shadow: 1em 1em 1em #4c4f4d;
+  }
+
+  .icon i {
+    color: #3498db;
+    padding-left: 3em;
+    font-size: 35px;
+
+  }
+  .para1 h2  {
+    text-align: center;
+      color: Black;
+
+  }
+  .para1 p {
+    text-align: center;
+    font-size: 20px;
+    color: Black;
+  }
+
+
+  .carDetails{
+    height: 200px;
+    border-style: dotted;
+  }
+  .form {
+    margin-top: 20px;
+    margin-left: 2em;
+  }
+  .carDetails label{
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+    color: Black;
+    text-shadow: #000000;
+  }
+  .carDetails input{
+    font-size: 1em;
+    border-radius: 0.5em 0.5em;
+  }
+  .carDetails button{
+    position: absolute;
+    /* top: 50%; */
+    left: 40%;
+    font-size: 1.5em;
+    border-radius: 0.5em 0.5em;
+  }
+  .s-m {
+    margin-top: 20px;
+    position: absolute;
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
 @media only screen and (min-width: 860px){
+  body {
+    font-family: Verdana, sans-serif;
+    background-image: radial-gradient(#2f4f4f,#000000);
+
+  }
+  h1{
+    text-align: center;
+    color: white;
+  }
+  .desktop{
+    display: inline;
+  }
+  .mobile{
+    display: none;
+  }
+  .navdesktop{
+    display: inline;
+  }
 
 
   nav{
@@ -159,5 +340,40 @@ h1{
     left: 40%;
     font-size: 1.5em;
     border-radius: 0.5em 0.5em;
+  }
+  .para1{
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    border-radius: 0 5em 5em 5em;
+    box-shadow: 1em 1em 1em #4c4f4d;
+  }
+
+  .icon i {
+    color: #3498db;
+    padding-left: 5.7em;
+    font-size: 35px;
+
+  }
+  .para1 h2  {
+    text-align: center;
+      color: white;
+
+  }
+  .para1 p {
+    text-align: center;
+    font-size: 20px;
+      color: white;
+  }
+  #copyright p {
+    color: White;
+  }
+  .s-m {
+    margin-top: 20px;
+    position: absolute;
+
+    width: 100%;
+    text-align: center;
+
   }
 }
