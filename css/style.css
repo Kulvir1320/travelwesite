@@ -233,7 +233,7 @@ article p {
   left: -10%;
 
 }
-@@keyframes aaa {
+@keyframes aaa {
   0% {
     left: -110%;
     top: 90%;
@@ -433,6 +433,9 @@ article p {
  }
 @media only screen and (min-width: 860px){
 
+.desktop{
+  display: inline;
+}
 
 
   header img{

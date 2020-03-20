@@ -310,6 +310,10 @@ body {
   height: 580px;
 }
 /* footer */
+
+footer{
+  /* background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4); */
+}
 .s-m {
   position: absolute;
 
@@ -358,7 +362,7 @@ body {
   left: -10%;
 
 }
-@@keyframes aaa {
+@keyframes aaa {
   0% {
     left: -110%;
     top: 90%;
@@ -377,9 +381,11 @@ body {
 }
 #copyright{
   text-align: center;
+
 }
 #copyright p {
   color: Black;
+  
 }
 
 
