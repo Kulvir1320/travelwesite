@@ -9,9 +9,8 @@ body {
 }
 .logo{
   text-align: center;
-
-  font-size: 15px;
-
+  color: #0080ff;
+    font-size: 15px;
 }
 .logo h3 {
   display: inline;
