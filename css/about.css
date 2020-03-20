@@ -115,6 +115,9 @@ header p {
 #copyright{
   text-align: center;
 }
+.desktop{
+  display: none;
+}
 
 
 
@@ -123,12 +126,51 @@ header p {
 
 @media only screen and (min-width: 685px){
 
+.mobile {
+  display: none;
+}
+.desktop{
+  display: inline;
+}
+#navbar{
+  display: inline;
+  float: left;
+}
 
 
+#navbar li{
+  display: inline;
+  background-image: #ffffff;
+  border-radius: 2em 2em;
+}
+
+#navbar{
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+
+}
+/* .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+  opacity: 70%;
+  float: left;
+  width: 49%;
+} */
 
 }
 
 @media only screen and (min-width: 860px){
+  .mobile {
+    display: none;
+  }
+  .desktop{
+    display: inline;
+  }
 
   #navbar{
     display: inline;

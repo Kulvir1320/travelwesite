@@ -462,7 +462,7 @@ article p {
 
    }
    .column {
-     float: left;
+     float: right;
      width: 33.33%;
      padding: 10px;
      height: 150px;
