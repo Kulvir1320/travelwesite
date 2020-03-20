@@ -1,6 +1,6 @@
 
 // createDatabase();
-// createObjectStores();
+createObjectStores();
 
 
 
@@ -71,7 +71,7 @@ function registerUser(){
 
 
 
-  let openRequest = indexedDB.open("DB_traveldatabase", 3);
+  let openRequest = indexedDB.open("DB_traveldatabase", 2);
   openRequest.onupgradeneeded = function() {
      console.log("upgrade called")
   };
@@ -145,7 +145,7 @@ function userlogIn(){
 
 
 
-  let openRequest = indexedDB.open("DB_traveldatabase", 3);
+  let openRequest = indexedDB.open("DB_traveldatabase", 2);
 
    openRequest.onupgradeneeded = function() {
        console.log("upgrade called")
@@ -222,7 +222,7 @@ function userlogIn(){
 function saveLoginUser(uname){
 
 
-let openRequest = indexedDB.open("DB_traveldatabase", 3);
+let openRequest = indexedDB.open("DB_traveldatabase", 2);
 openRequest.onupgradeneeded = function() {
 
   console.log("upgrade called")
@@ -276,7 +276,7 @@ function bookhotelfunc(){
 
 
 
-   let openRequest = indexedDB.open("DB_traveldatabase", 3);
+   let openRequest = indexedDB.open("DB_traveldatabase", 2);
 
       openRequest.onupgradeneeded = function() {
 
@@ -377,7 +377,7 @@ function bookcarfunc(){
 
 
 
-   let openRequest = indexedDB.open("DB_traveldatabase", 3);
+   let openRequest = indexedDB.open("DB_traveldatabase", 2);
 
       openRequest.onupgradeneeded = function() {
 
@@ -478,7 +478,7 @@ function bookairlinefunc(){
 
 
 
-   let openRequest = indexedDB.open("DB_traveldatabase", 3);
+   let openRequest = indexedDB.open("DB_traveldatabase", 2);
 
       openRequest.onupgradeneeded = function() {
 
@@ -578,7 +578,7 @@ function bookairlinefunc(){
 function showmylist(){
 
 
-     let openRequest = indexedDB.open("DB_traveldatabase", 3);
+     let openRequest = indexedDB.open("DB_traveldatabase", 2);
 
         openRequest.onupgradeneeded = function() {
 
@@ -629,6 +629,8 @@ function showmylist(){
 
                code += "<li>" + inforeqs[i] + "</li>"
              }
+
+             document.getElementById('custdetails').innerHTML = "Hello, " + loginame +" " + ln;
 
              document.getElementById("userlist").innerHTML = code;
              }

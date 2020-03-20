@@ -94,18 +94,36 @@ body {
   text-align: center;
 }
 
-ul{
+.list  ul{
   list-style-type: none;
   padding: 2%;
 }
 
-ul li{
+.list  ul li{
   margin: 2%;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
   background-image: linear-gradient(to right, #e9967a, #4682b4);
   border-radius: 0 2em;
   box-shadow: 0 5px 15px -5px #00000070;
+}
+
+header{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  padding: 1%;
+  background: #ffffff;
+  background-image: radial-gradient(#ffffff, #87ceeb);
+  border-radius: 2em 2em;
+
+  text-align: center;
+}
+
+header img{
+  width: 10%;
+  height: 10%;
+
 }
 
 @media only screen and (min-width: 860px){
