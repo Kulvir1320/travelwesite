@@ -3,6 +3,7 @@
 * {box-sizing: border-box;}
 body {
   font-family: Verdana, sans-serif;
+  background-image: radial-gradient(#ffffff, #FFF0F5);
 
 
 }
@@ -212,6 +213,7 @@ img {
   height: 150px;
   border: 1px solid #FA8072;
    border-radius: 2em 2em;
+   background-image: radial-gradient(#b3daff, #ffe6cc);
 }
 
 /* Clear floats after the columns */

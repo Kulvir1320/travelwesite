@@ -17,6 +17,7 @@ body{
   width: 100%;
 
 }
+
 .info {
   background-color: HoneyDew;
   border-radius: 2em 2em;
@@ -47,6 +48,7 @@ article h3 {
 
 }
 .s-m {
+  clear: both;
   position: absolute;
 
   width: 100%;
@@ -117,17 +119,14 @@ article h3 {
 #copyright p {
   color: White;
 }
-@media only screen and (min-width: 860px){
-
+@media only screen and (min-width: 685px){
   .navigationhotel{
     margin-top: 2%;
   }
   img{
     width: 100%;
 
-
   }
-
 
   nav{
     display: inline;
@@ -163,6 +162,89 @@ article h3 {
     position: absolute;
     top: 60%;
     left: 40%;
+
+    /* margin: 20px;
+    max-width: 300px;
+    padding: 16px; */
+  }
+
+  .hotelDetails label{
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: #000000;
+  }
+  /* .container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+} */
+  .hotelDetails input{
+    font-size: 1em;
+    border-radius: 0.5em 0.5em;
+  }
+  .hotelDetails button{
+    position: absolute;
+    /* top: 50%; */
+    left: 40%;
+    font-size: 1.5em;
+    border-radius: 0.5em 0.5em;
+  }
+
+
+
+
+}
+@media only screen and (min-width: 860px){
+
+  .navigationhotel{
+    margin-top: 2%;
+  }
+  img{
+    width: 100%;
+
+  }
+
+  nav{
+    display: inline;
+
+
+  }
+  nav li{
+    float: left;
+    display: inline;
+    margin-left: 0;
+    font-size: 1.5em;
+    padding-left: 1%;
+
+  }
+  nav li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  nav ul li :hover{
+    color: #1e90ff;
+  }
+
+
+  .heading{
+    position: absolute;
+
+    /* position:static; */
+    top: 2%;
+    left: 30%;
+    opacity: 80%;
+  }
+
+  .hotelDetails{
+    position: absolute;
+    top: 60%;
+    left: 40%;
   }
 
   .hotelDetails label{
@@ -177,11 +259,15 @@ article h3 {
     border-radius: 0.5em 0.5em;
   }
   .hotelDetails button{
+    display: flex;
     position: absolute;
     /* top: 50%; */
     left: 40%;
     font-size: 1.5em;
     border-radius: 0.5em 0.5em;
+  }
+  .s-m {
+    clear: both;
   }
 
 
