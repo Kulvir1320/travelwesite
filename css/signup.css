@@ -52,12 +52,13 @@ body {
    padding: 40px;
    width:35%;
    height: 430px;
-  margin-top: 300px;
+   /* margin-top: 500px; */
    margin-left: 32%;
    margin:  0 auto;
    /* margin: 200px; */
 }
 form {
+
   width: 100%;
   text-align: center;
 
@@ -188,7 +189,7 @@ h2{
 
   #navbar{
 
-    position: absolute;
+    /* position: absolute; */
     top: 5%;
     left: 5%;
 
