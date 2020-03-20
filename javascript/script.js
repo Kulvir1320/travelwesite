@@ -1,6 +1,8 @@
 
 // createDatabase();
-createObjectStores();
+// createObjectStores();
+
+
 
 
 
@@ -129,4 +131,67 @@ setTimeout(function() {
 }, 30000);
 
 }
+}
+
+function userlogIn(){
+
+  let uname = document.getElementById('username').value;
+  let p = document.getElementById('upassword').value;
+
+  if(uname == "" & p == ""){
+    alert("empty")
+  }else {
+
+
+
+  let openRequest = indexedDB.open("DB_traveldatabase", 2);
+   openRequest.onupgradeneeded = function() {
+       console.log("upgrade called")
+    };
+
+     openRequest.onerror = function() {
+
+        console.log("error called")
+    };
+
+     openRequest.onsuccess = function() {
+        let db = openRequest.result;
+
+         console.log("success called")
+
+        db.onversionchange = function() {
+        db.close();
+
+         };
+         let transaction = db.transaction("userdata", "readwrite");
+         let t = transaction.objectStore("userdata");
+
+         let req = t.get(uname)
+
+         req.onsuccess = function() {
+            console.log(req.result)
+            var recieved = req.result
+            if(recieved == null){
+              alert("user not registered!!!!")
+            }else if (p == recieved.password) {
+              window.location = "index.html";
+              alert("login succesful")
+
+            }else {
+              alert("wrong password")
+            }
+         };
+
+         req.onerror = function() {
+                     console.log("Error", request.error);
+
+              }
+     };
+
+     openRequest.onblocked = function() {
+
+       };
+
+     }
+
 }
