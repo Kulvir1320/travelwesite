@@ -372,3 +372,205 @@ function bookhotelfunc(){
        openRequest.onblocked = function() {
       };
 }
+
+function bookcarfunc(){
+
+
+
+   let openRequest = indexedDB.open("DB_traveldatabase", 3);
+
+      openRequest.onupgradeneeded = function() {
+
+        console.log("upgrade called")
+     };
+
+    openRequest.onerror = function() {
+
+        console.log("error called")
+
+    };
+
+    let cname = document.getElementById('carname').value
+    let cperson = document.getElementById('carperson').value
+    let carin = document.getElementById('carcheckin').value
+    let carout  = document.getElementById('carcheckout').value
+
+   openRequest.onsuccess = function() {
+        let db = openRequest.result;
+
+          console.log("success called")
+
+        db.onversionchange = function() {
+        db.close();
+
+         };
+         let transaction = db.transaction("userdata", "readwrite");
+         let t = transaction.objectStore("userdata");
+
+
+         let r = t.get("logInUser");
+
+
+         r.onsuccess = function(){
+           let reslt = r.result;
+           let loginame = reslt.username;
+           console.log(loginame);
+
+           let info = t.get(loginame);
+           info.onsuccess = function(){
+
+             let inforesult = info.result;
+
+             let ln = inforesult.lastname;
+             let p = inforesult.password;
+             let inforeqs = inforesult.requests;
+
+             if(cname == "" & cperson == "" & carin == "" & carout == ""){
+               alert("empty!!!!!!")
+             }else {
+
+               // let newreq = [hname,hperson,hotelin,hotelout];
+               // oldreq.push(newreq);
+               inforeqs.push("Car Booked:" + cname + "\n Persons:" + cperson+"\n Check In:"+carin+"\n Check Out:"
+             + carout);
+
+             let Newdata={
+
+
+                id: loginame,
+                lastname: ln,
+                password: p,
+                requests: inforeqs
+
+              //   requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
+              // + hotelout]
+             }
+             let req = t.put(Newdata);
+
+             req.onsuccess = function() {
+               alert("booking succesful")
+                console.log(req.result)
+                console.log(Newdata);
+
+             };
+             req.onerror = function() {
+                         console.log("Error", request.error);
+                  }
+          };
+
+           }
+
+
+
+
+
+         }
+
+
+
+
+    }
+       openRequest.onblocked = function() {
+      };
+}
+
+function bookairlinefunc(){
+
+
+
+   let openRequest = indexedDB.open("DB_traveldatabase", 3);
+
+      openRequest.onupgradeneeded = function() {
+
+        console.log("upgrade called")
+     };
+
+    openRequest.onerror = function() {
+
+        console.log("error called")
+
+    };
+
+    let aname = document.getElementById('airlinename').value
+    let aperson = document.getElementById('numpassenger').value
+    let airin = document.getElementById('aircheckin').value
+    let airout  = document.getElementById('aircheckout').value
+
+   openRequest.onsuccess = function() {
+        let db = openRequest.result;
+
+          console.log("success called")
+
+        db.onversionchange = function() {
+        db.close();
+
+         };
+         let transaction = db.transaction("userdata", "readwrite");
+         let t = transaction.objectStore("userdata");
+
+
+         let r = t.get("logInUser");
+
+
+         r.onsuccess = function(){
+           let reslt = r.result;
+           let loginame = reslt.username;
+           console.log(loginame);
+
+           let info = t.get(loginame);
+           info.onsuccess = function(){
+
+             let inforesult = info.result;
+
+             let ln = inforesult.lastname;
+             let p = inforesult.password;
+             let inforeqs = inforesult.requests;
+
+             if(aname == "" & aperson == "" & airin == "" & airout == ""){
+               alert("empty!!!!!!")
+             }else {
+
+               // let newreq = [hname,hperson,hotelin,hotelout];
+               // oldreq.push(newreq);
+               inforeqs.push("Airline:" + aname + "\n Passenger:" + aperson+"\n Check In:"+airin+"\n Check Out:"
+             + airout);
+
+             let Newdata={
+
+
+                id: loginame,
+                lastname: ln,
+                password: p,
+                requests: inforeqs
+
+              //   requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
+              // + hotelout]
+             }
+             let req = t.put(Newdata);
+
+             req.onsuccess = function() {
+               alert("booking succesful")
+                console.log(req.result)
+                console.log(Newdata);
+
+             };
+             req.onerror = function() {
+                         console.log("Error", request.error);
+                  }
+          };
+
+           }
+
+
+
+
+
+         }
+
+
+
+
+    }
+       openRequest.onblocked = function() {
+      };
+}

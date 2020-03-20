@@ -83,7 +83,7 @@ h1{
   left: -10%;
 
 }
-@@keyframes aaa {
+@keyframes aaa {
   0% {
     left: -110%;
     top: 90%;
@@ -136,24 +136,24 @@ h1{
 
 
 
-  .hotelDetails{
+  .carDetails{
     position: absolute;
     top: 60%;
     left: 55%;
   }
 
-  .hotelDetails label{
+  .carDetails label{
     font-size: 1.5em;
     font-style: oblique;
     font-weight: bolder;
     color: #ffffff;
     text-shadow: #000000;
   }
-  .hotelDetails input{
+  .carDetails input{
     font-size: 1em;
     border-radius: 0.5em 0.5em;
   }
-  .hotelDetails button{
+  .carDetails button{
     position: absolute;
     /* top: 50%; */
     left: 40%;

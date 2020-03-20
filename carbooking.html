@@ -31,23 +31,23 @@
 
     <div class="desktop">
 
-      <div class="hotelDetails">
+      <div class="carDetails">
 
         <label for="hotel">Type</label>
-        <input type="text" name="hotelname" value=""> &nbsp;
+        <input type="text" name="hotelname" value="" id ="carname"> &nbsp;
         <label for="person">Person</label>
-        <input type="text" name="" value="">&nbsp;
+        <input type="text" name="" value="" id="carperson">&nbsp;
         <br>
         <br>
         <label for="checkin">CheckIn</label>
-        <input type="date" name="" value=""> &nbsp;
+        <input type="date" name="" value="" id="carcheckin"> &nbsp;
         <label for="checkout">CheckOut</label>
-        <input type="date" name="" value=""> &nbsp;
+        <input type="date" name="" value="" id="carcheckout"> &nbsp;
 
         <br><br>
 
 
-        <button type="button" name="button" id="carbooking" disabled = true;>Book Now</button>
+        <button type="button" name="button" id="carbooking" onclick="bookcarfunc()">Book Now</button>
 
 
       </div>
