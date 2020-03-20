@@ -135,7 +135,7 @@ nav ul li :hover{
   left: -10%;
 
 }
-@@keyframes aaa {
+@keyframes aaa {
   0% {
     left: -110%;
     top: 90%;
@@ -157,4 +157,79 @@ nav ul li :hover{
 }
 #copyright p {
   color: Black;
+}
+
+@media only screen and (min-width: 860px){
+
+  .navigationtickets{
+    margin-top: 2%;
+  }
+  img{
+    width: 100%;
+    margin-top: 1%
+
+
+  }
+
+
+  nav{
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+
+  }
+  nav li{
+    float: left;
+    display: inline;
+    margin-left: 2%;
+    font-size: 1.7em;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #ff7f50;
+    border-radius: 2em 2em;
+    opacity: 90%;
+
+  }
+  nav li a{
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+
+  nav ul li :hover{
+    color: #1e90ff;
+  }
+
+
+
+  .ticketsDetails{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+  }
+
+  .ticketsDetails label{
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: #000000;
+  }
+  .ticketsDetails input{
+    font-size: 1em;
+    border-radius: 0.5em 0.5em;
+  }
+  .ticketsDetails button{
+    position: absolute;
+    /* top: 50%; */
+    left: 40%;
+    font-size: 1.5em;
+    border-radius: 0.5em 0.5em;
+  }
+
+  
+
+
 }
