@@ -3,8 +3,17 @@
 * {box-sizing: border-box;}
 body {
   font-family: Verdana, sans-serif;
-  background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
 
+
+}
+.logo{
+  text-align: center;
+  color: white;
+  font-size: 15px;
+
+}
+.logo h3 {
+  display: inline;
 }
 .mySlides {
   display: none;
@@ -77,6 +86,38 @@ img {
 /* header {
   text-align: center;
 } */
+/* iconbar */
+.icon-bar {
+  float:left;
+  width: 25%;
+  /* color: #3498db; */
+  background-color: #E0FFFF;
+}
+.icon-bar i {
+  color: #3498db;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/* .active {
+  background-color: #4CAF50;
+} */
+.app {
+   border-radius: 2em 2em;
+   border: 2px solid;
+   background-color: #87CEFA;
+}
 
 #nav1 {
   /* float: block; */
@@ -158,6 +199,8 @@ img {
 }
 .column {
   /* float: left; */
+  /* clear: both; */
+  clear: left;
   width: 100%;
   padding: 10px;
   height: 150px;
@@ -261,7 +304,11 @@ article p {
 
 
  @media only screen and (min-width: 685px){
+   body {
+     font-family: Verdana, sans-serif;
+     background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
 
+   }
 
    .desktop{
      display: inline;
@@ -432,12 +479,23 @@ article p {
    .para{
      text-align: center;
    }
+   .mobile{
+     display: none;
+   }
 
  }
 @media only screen and (min-width: 860px){
+  body {
+    font-family: Verdana, sans-serif;
+    background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+
+  }
 
 .desktop{
   display: inline;
+}
+.mobile{
+  display: none;
 }
 
 
@@ -634,7 +692,8 @@ padding: 0.8px;
 
 }
 .column {
-  float: left;
+  /* clear: both; */
+  float: right;
   width: 33.33%;
   padding: 10px;
   height: 150px;
@@ -649,6 +708,7 @@ padding: 0.8px;
   clear: both;
 }
 .para{
+  /* float: left; */
   text-align: center;
 }
 
