@@ -71,7 +71,7 @@ function registerUser(){
 
 
 
-  let openRequest = indexedDB.open("DB_traveldatabase", 2);
+  let openRequest = indexedDB.open("DB_traveldatabase", 3);
   openRequest.onupgradeneeded = function() {
      console.log("upgrade called")
   };
@@ -145,9 +145,15 @@ function userlogIn(){
 
 
 
-  let openRequest = indexedDB.open("DB_traveldatabase", 2);
+  let openRequest = indexedDB.open("DB_traveldatabase", 3);
    openRequest.onupgradeneeded = function() {
        console.log("upgrade called")
+
+       let db = openRequest.result;
+
+         if (!db.objectStoreNames.contains('userlogedin')) { // if there's no "books" store
+           db.createObjectStore('userlogedin', {keyPath: 'id'}); // create it
+         }
     };
 
      openRequest.onerror = function() {
@@ -201,7 +207,7 @@ function bookhotelfunc(){
 
   console.log(loginuser);
 
-   let openRequest = indexedDB.open("DB_traveldatabase", 2);
+   let openRequest = indexedDB.open("DB_traveldatabase", 3);
 
       openRequest.onupgradeneeded = function() {
 
