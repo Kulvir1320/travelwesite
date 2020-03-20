@@ -309,40 +309,59 @@ function bookhotelfunc(){
 
          let r = t.get("logInUser");
 
+
          r.onsuccess = function(){
            let reslt = r.result;
            let loginame = reslt.username;
            console.log(loginame);
 
-           if(hname == "" & hperson == "" & hotelin == "" & hotelout == ""){
-             alert("empty!!!!!!")
-           }else {
+           let info = t.get(loginame);
+           info.onsuccess = function(){
 
-             // let newreq = [hname,hperson,hotelin,hotelout];
-             // oldreq.push(newreq);
+             let inforesult = info.result;
 
-           let Newdata={
+             let ln = inforesult.lastname;
+             let p = inforesult.password;
+             let inforeqs = inforesult.requests;
+
+             if(hname == "" & hperson == "" & hotelin == "" & hotelout == ""){
+               alert("empty!!!!!!")
+             }else {
+
+               // let newreq = [hname,hperson,hotelin,hotelout];
+               // oldreq.push(newreq);
+               inforeqs.push("Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
+             + hotelout);
+
+             let Newdata={
 
 
-              id: loginame,
-              // lastname: r.lastname,
-              // password: r.password,
+                id: loginame,
+                lastname: ln,
+                password: p,
+                requests: inforeqs
 
-              requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
-            + hotelout]
+              //   requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
+              // + hotelout]
+             }
+             let req = t.put(Newdata);
+
+             req.onsuccess = function() {
+               alert("booking succesful")
+                console.log(req.result)
+                console.log(Newdata);
+
+             };
+             req.onerror = function() {
+                         console.log("Error", request.error);
+                  }
+          };
+
            }
-           let req = t.put(Newdata);
 
-           req.onsuccess = function() {
-             alert("booking succesful")
-              console.log(req.result)
-              console.log(Newdata);
 
-           };
-           req.onerror = function() {
-                       console.log("Error", request.error);
-                }
-        };
+
+
 
          }
 
