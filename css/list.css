@@ -1,6 +1,7 @@
 body {
   font-family: Verdana, sans-serif;
-  background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+  /* background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4); */
+  background: #87ceeb;
 
 }
 
@@ -91,6 +92,20 @@ body {
 
 #copyright{
   text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  padding: 2%;
+}
+
+ul li{
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  background-image: linear-gradient(to right, #e9967a, #4682b4);
+  border-radius: 0 2em;
+  box-shadow: 0 5px 15px -5px #00000070;
 }
 
 @media only screen and (min-width: 860px){

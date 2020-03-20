@@ -330,7 +330,7 @@ function bookhotelfunc(){
 
                // let newreq = [hname,hperson,hotelin,hotelout];
                // oldreq.push(newreq);
-               inforeqs.push("Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
+               inforeqs.push("Hotel Booked:" + hname + "<br> Persons:" + hperson+"<br> Check In:"+hotelin+"<br> Check Out:"
              + hotelout);
 
              let Newdata={
@@ -431,7 +431,7 @@ function bookcarfunc(){
 
                // let newreq = [hname,hperson,hotelin,hotelout];
                // oldreq.push(newreq);
-               inforeqs.push("Car Booked:" + cname + "\n Persons:" + cperson+"\n Check In:"+carin+"\n Check Out:"
+               inforeqs.push("Car Booked:" + cname + "<br> Persons:" + cperson+"<br> Check In:"+carin+"<br> Check Out:"
              + carout);
 
              let Newdata={
@@ -532,7 +532,7 @@ function bookairlinefunc(){
 
                // let newreq = [hname,hperson,hotelin,hotelout];
                // oldreq.push(newreq);
-               inforeqs.push("Airline:" + aname + "\n Passenger:" + aperson+"\n Check In:"+airin+"\n Check Out:"
+               inforeqs.push("Airline:" + aname + "<br> Passenger:" + aperson+"<br> Check In:"+airin+"<br> Check Out:"
              + airout);
 
              let Newdata={
@@ -573,4 +573,70 @@ function bookairlinefunc(){
     }
        openRequest.onblocked = function() {
       };
+}
+
+function showmylist(){
+
+
+     let openRequest = indexedDB.open("DB_traveldatabase", 3);
+
+        openRequest.onupgradeneeded = function() {
+
+          console.log("upgrade called")
+       };
+
+      openRequest.onerror = function() {
+
+          console.log("error called")
+
+      };
+
+
+
+     openRequest.onsuccess = function() {
+          let db = openRequest.result;
+
+            console.log("success called")
+
+          db.onversionchange = function() {
+          db.close();
+
+           };
+           let transaction = db.transaction("userdata", "readwrite");
+           let t = transaction.objectStore("userdata");
+
+
+           let r = t.get("logInUser");
+
+
+           r.onsuccess = function(){
+             let reslt = r.result;
+             let loginame = reslt.username;
+             console.log(loginame);
+
+             let info = t.get(loginame);
+             info.onsuccess = function(){
+
+               let inforesult = info.result;
+
+               let ln = inforesult.lastname;
+               let p = inforesult.password;
+               let inforeqs = inforesult.requests;
+
+               var code = "";
+
+             for(var i = 0 ; i < inforeqs.length; i++){
+
+               code += "<li>" + inforeqs[i] + "</li>"
+             }
+
+             document.getElementById("userlist").innerHTML = code;
+             }
+           }
+
+      }
+         openRequest.onblocked = function() {
+        };
+
+
 }
