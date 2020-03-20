@@ -138,6 +138,7 @@ function userlogIn(){
   let uname = document.getElementById('username').value;
   let p = document.getElementById('upassword').value;
 
+
   if(uname == "" & p == ""){
     alert("empty")
   }else {
@@ -194,4 +195,74 @@ function userlogIn(){
 
      }
 
+}
+
+function bookhotelfunc(){
+
+  console.log(loginuser);
+
+   let openRequest = indexedDB.open("DB_traveldatabase", 2);
+
+      openRequest.onupgradeneeded = function() {
+
+        console.log("upgrade called")
+     };
+
+    openRequest.onerror = function() {
+
+        console.log("error called")
+
+    };
+
+    let hname = document.getElementById('hotelname').value
+    let hperson = document.getElementById('numperson').value
+    let hotelin = document.getElementById('hotelcheckin').value
+    let hotelout  = document.getElementById('hotelcheckout').value
+
+   openRequest.onsuccess = function() {
+        let db = openRequest.result;
+
+          console.log("success called")
+
+        db.onversionchange = function() {
+        db.close();
+
+         };
+         let transaction = db.transaction("userdata", "readwrite");
+         let t = transaction.objectStore("userdata");
+
+         let r = t.get(loginuser);
+
+         if(hname == "" & hperson == "" & hotelin == "" & hotelout == ""){
+           alert("empty!!!!!!")
+         }else {
+
+
+
+         let Newdata={
+            id: loginuser,
+            lastname: r.lastname,
+            password: r.password,
+
+            requests: ["r1","r2","r3"]
+
+
+         }
+         let req = t.put(Newdata);
+
+         req.onsuccess = function() {
+            console.log(req.result)
+            console.log(Newdata);
+
+         };
+         req.onerror = function() {
+                     console.log("Error", request.error);
+              }
+      };
+
+    }
+
+
+       openRequest.onblocked = function() {
+      };
 }
