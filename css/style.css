@@ -164,11 +164,15 @@ img {
 }
 #nav3{
   display: none;
-
+  /* text-align: center; */
+padding-left: 30%;
 }
 #nav3 li{
-  display: block;
+  clear: both;
+  /* display: block; */
+
 }
+
 #nav2 :hover{
   color: #1e90ff;
 }
