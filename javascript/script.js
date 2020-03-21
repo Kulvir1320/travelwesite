@@ -348,6 +348,11 @@ function bookhotelfunc(){
 
              req.onsuccess = function() {
                alert("booking succesful")
+               document.getElementById('hotelname').value = ""
+               document.getElementById('numperson').value = ""
+               document.getElementById('hotelcheckin').value = ""
+               document.getElementById('hotelcheckout').value = ""
+
                 console.log(req.result)
                 console.log(Newdata);
 
@@ -449,6 +454,10 @@ function bookcarfunc(){
 
              req.onsuccess = function() {
                alert("booking succesful")
+               document.getElementById('carname').value = ""
+               document.getElementById('carperson').value = ""
+               document.getElementById('carcheckin').value = ""
+               document.getElementById('carcheckout').value = ""
                 console.log(req.result)
                 console.log(Newdata);
 
@@ -550,6 +559,10 @@ function bookairlinefunc(){
 
              req.onsuccess = function() {
                alert("booking succesful")
+               document.getElementById('airlinename').value = ""
+               document.getElementById('numpassenger').value = ""
+               document.getElementById('aircheckin').value = ""
+               document.getElementById('aircheckout').value = ""
                 console.log(req.result)
                 console.log(Newdata);
 
