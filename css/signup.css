@@ -158,7 +158,7 @@ h2{
   left: -10%;
 
 }
-@@keyframes aaa {
+@keyframes aaa {
   0% {
     left: -110%;
     top: 90%;
