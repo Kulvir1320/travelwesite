@@ -56,14 +56,14 @@ body {
   margin-left: 1em;
 }
 .carDetails label{
-  font-size: 1.5em;
+  font-size: 1em;
   font-style: oblique;
   font-weight: bolder;
   color: Black;
   text-shadow: #000000;
 }
 .carDetails input{
-  font-size: 1em;
+  font-size: 0.5em;
   border-radius: 0.5em 0.5em;
 }
 .carDetails button{
@@ -233,7 +233,7 @@ h1{
   }
   .para1 p {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: Black;
   }
 
@@ -319,8 +319,8 @@ h1{
 
   .carDetails{
     position: absolute;
-    top: 60%;
-    left: 55%;
+    top: 40%;
+    left: 10%;
   }
 
   .carDetails label{
@@ -362,7 +362,7 @@ h1{
   }
   .para1 p {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
       color: white;
   }
   #copyright p {
