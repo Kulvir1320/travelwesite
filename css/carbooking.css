@@ -1,7 +1,8 @@
 
 body {
   font-family: Verdana, sans-serif;
-  background-image: radial-gradient(#ffffff, #FFF0F5);
+  /* background-image: radial-gradient(#ffffff, #FFF0F5); */
+  background: #87ceeb;
 
 }
 .mobile {
@@ -25,6 +26,7 @@ body {
 .icon-bar {
   float:left;
   width: 25%;
+  margin-bottom: 1%;
   /* color: #3498db; */
   background-color: #E0FFFF;
 }
@@ -79,6 +81,8 @@ h1{
 }
 .para1{
 
+  background-image: radial-gradient(#ffffff, #FFF0F5);
+margin-top: 2%;
   height: 300px;
   border-radius: 0 5em 5em 5em;
   box-shadow: 1em 1em 1em #4c4f4d;

@@ -2,7 +2,8 @@
 * {box-sizing: border-box;}
 body {
   font-family: Verdana, sans-serif;
-  background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+  /* background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4); */
+  background: #87ceeb;
 
 }
 .desktop{

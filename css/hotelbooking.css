@@ -26,7 +26,8 @@
   display: none;
 }
 body{
-    background-image: radial-gradient(#ffffff, #FFF0F5);
+    /* background-image: radial-gradient(#ffffff, #FFF0F5); */
+    background: #87ceeb;
 }
 .logo{
   text-align: center;
@@ -37,6 +38,7 @@ body{
   float:left;
   width: 25%;
   /* color: #3498db; */
+  margin-bottom: 1%;
   background-color: #E0FFFF;
 }
 .icon-bar i {
@@ -78,8 +80,7 @@ body{
 }
 
 .hotelDetails label{
-  padding-left: 1em;
-  font-size: 1.5em;
+  font-size: 1em;
   font-style: oblique;
   font-weight: bolder;
   color: Black;
@@ -95,7 +96,7 @@ body{
   position: absolute;
   /* top: 50%; */
   left: 40%;
-  font-size: 1.5em;
+  font-size: 1em;
   border-radius: 0.5em 0.5em;
 }
 
@@ -108,7 +109,8 @@ body{
 }
 
 .info {
-  background-color: #87ceeb;
+  /* background-color: #87ceeb; */
+  background-image: radial-gradient(#ffffff, #FFF0F5);
   border-radius: 2em 2em;
 
   margin: 0 1.5%;

@@ -3,7 +3,8 @@
 * {box-sizing: border-box;}
 body {
   font-family: Verdana, sans-serif;
-  background-image: radial-gradient(#ffffff, #FFF0F5);
+  /* background-image: radial-gradient(#ffffff, #FFF0F5); */
+  background: #87ceeb;
 
 
 }

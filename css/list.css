@@ -116,7 +116,7 @@ body {
 header{
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 2%;
+  margin-top: 20%;
   padding: 1%;
   background: #ffffff;
   background-image: radial-gradient(#ffffff, #87ceeb);
@@ -138,6 +138,7 @@ header img{
 .icon-bar {
   float:left;
   width: 25%;
+  margin-bottom: 1%;
   /* color: #3498db; */
   background-color: #E0FFFF;
 }
@@ -200,6 +201,18 @@ header img{
     left: 5%;
 
 
+  }
+
+  header{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    padding: 1%;
+    background: #ffffff;
+    background-image: radial-gradient(#ffffff, #87ceeb);
+    border-radius: 2em 2em;
+
+    text-align: center;
   }
   .mobile{
     display: none;

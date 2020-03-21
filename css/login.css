@@ -1,6 +1,6 @@
 body {
   font-family: Tahoma, Geneva, sans-serif;
-  color: #ffffff;
+  background: #87ceeb;
   /* background-image: url('back.jpg');
   background-size: cover; */
 }
@@ -62,11 +62,12 @@ body {
 }
 .signin{
   background: rgba(44,62,80,0.7);
-  padding: 40px;
-  width:35%;
-  margin: 0 auto;
-  margin-top: 20%;
-  margin-left: 32%;
+  padding: 10px;
+  width:80%;
+  /* margin: 0 auto; */
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
   height: 500px;
 }
 form {
@@ -196,10 +197,15 @@ input {
  #copyright p {
    color: Black;
  }
+
+ #copyright a{
+   color: #0000ff;
+ }
  .icon-bar {
    float:left;
    width: 25%;
    /* color: #3498db; */
+   margin-bottom: 1%;
    background-color: #E0FFFF;
  }
  .icon-bar i {
@@ -216,7 +222,7 @@ input {
  }
 
  .icon-bar a:hover {
-   background-color: #000;
+   background-color: #87CEFA;
  }
  @media only screen and (min-width: 685px) {
    body {
@@ -227,12 +233,11 @@ input {
    }
    .signin{
      background: rgba(44,62,80,0.7);
-     padding: 40px;
-     width:60%;
-     margin: 0 auto;
-     margin-top: 10%;
-     margin-left: 20%;
-     margin-right: 20%;
+     padding: 20px;
+     width:50%;
+     margin-top: 1%;
+     margin-left: auto;
+     margin-right: auto;
      height: 500px;
    }
    .mobile {
@@ -242,6 +247,7 @@ input {
      display: inline;
 
    }
+
 
  }
  @media only screen and (min-width: 860px) {
@@ -259,12 +265,12 @@ input {
    }
    .signin{
      background: rgba(44,62,80,0.7);
-     padding: 40px;
-     width:35%;
-     margin: 0 auto;
-     margin-top: 10%;
-     margin-left: 32%;
-     margin-right:  32%;
+     padding: 20px;
+     width:50%;
+     /* margin: 0 auto; */
+     margin-top: 2%;
+     margin-left: auto;
+     margin-right:  auto;
      height: 500px;
    }
    #navbar{

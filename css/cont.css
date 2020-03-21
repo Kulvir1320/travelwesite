@@ -4,6 +4,8 @@
 
 body {
   font-family: Verdana, sans-serif;
+  background: #87ceeb;
+
 
 
 }
@@ -16,6 +18,7 @@ body {
   float:left;
   width: 25%;
   /* color: #3498db; */
+  margin-bottom: 1%;
   background-color: #E0FFFF;
 }
 .icon-bar i {
@@ -32,7 +35,7 @@ body {
 }
 
 .icon-bar a:hover {
-  background-color: #000;
+  background-color: #87CEFA;
 }
 .info{
 
@@ -45,6 +48,11 @@ margin-top: 25%;
   width: 100%;
 }
 
+.logo{
+  text-align: center;
+  color: #0080ff;
+    font-size: 15px;
+}
 
 .navdesktop{
   display: none;

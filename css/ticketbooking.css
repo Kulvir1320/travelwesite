@@ -1,6 +1,7 @@
 
 body{
-    background-image: radial-gradient(#ffffff, #FFF0F5);
+    /* background-image: radial-gradient(#ffffff, #FFF0F5); */
+    background: #87ceeb;
 }
 .mobile {
   display: inline;
@@ -20,6 +21,7 @@ body{
 .icon-bar {
   float:left;
   width: 25%;
+  margin-bottom: 1%;
   /* color: #3498db; */
   background-color: #E0FFFF;
 }
@@ -82,7 +84,8 @@ margin-top: 10px;
   border-style: double;
   border-radius: 0 5em 5em 5em;
   box-shadow: 1em 1em 1em #4c4f4d;
-   background-image: radial-gradient(#b3daff, #ffe6cc);
+   
+   background-image: radial-gradient(#ffffff, #FFF0F5);
 margin-bottom: 20px;
 
 }
@@ -145,7 +148,7 @@ margin-bottom: 20px;
   /* position: absolute;
   top: 80%;
   left: 40%; */
-  margin-top: 2%;
+  margin-top: 7%;
   height: 200px;
   border-style: dotted;
 }

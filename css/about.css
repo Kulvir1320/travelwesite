@@ -1,7 +1,7 @@
 body {
   font-family: Verdana, sans-serif;
-  background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
-
+  /* background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4); */
+background: #87ceeb;
 }
 .mobile {
   display: inline;
@@ -199,6 +199,12 @@ padding: 0.5em;
 
 @media only screen and (min-width: 685px){
 
+  body {
+    font-family: Verdana, sans-serif;
+    background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+  /* background: #87ceeb; */
+  }
+
 .mobile {
   display: none;
 }
@@ -309,6 +315,12 @@ padding: 0.5em;
 }
 
 @media only screen and (min-width: 860px){
+
+  body {
+    font-family: Verdana, sans-serif;
+    background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
+  /* background: #87ceeb; */
+  }
   .mobile {
     display: none;
   }
