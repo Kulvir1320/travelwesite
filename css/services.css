@@ -5,6 +5,12 @@ body {
   background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
 
 }
+.desktop{
+  display: none;
+}
+.mobile{
+  display: inline;
+}
 #navbar {
   float: block;
   font-family: Georgia, "Times New Roman", serif;
@@ -45,6 +51,37 @@ body {
 #navbar li a {
   color: #ff7f50;
   text-decoration: none;
+}
+.icon-bar {
+  float:left;
+  width: 25%;
+  /* color: #3498db; */
+  background-color: #E0FFFF;
+  margin-bottom: 1%;
+}
+.icon-bar i {
+  color: #3498db;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #87CEFA;
+
+
+
+}
+.logo{
+  text-align: center;
+  color: #0080ff;
+    font-size: 15px;
 }
 .main{
   clear: both;
@@ -188,6 +225,12 @@ padding: 0.8px;
 }
 
 @media only screen and (min-width: 860px){
+  .desktop{
+    display: inline;
+  }
+  .mobile{
+    display: none;
+  }
   #navbar{
     display: inline;
     float: left;
