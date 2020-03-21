@@ -230,6 +230,16 @@ h2{
 
 
   }
+  .signup{
+     background: rgba(44,62,80,0.7);
+     padding: 10px;
+     width:80%;
+     /* margin: 0 auto; */
+     margin-top: 1%;
+     margin-left: auto;
+     margin-right: auto;
+     height: 500px;
+  }
   .mobile {
     display: none;
   }
@@ -257,7 +267,16 @@ h2{
     display: inline;
     float: left;
   }
-
+  .signup{
+     background: rgba(44,62,80,0.7);
+     padding: 10px;
+     width:80%;
+     /* margin: 0 auto; */
+     margin-top: 1%;
+     margin-left: auto;
+     margin-right: auto;
+     height: 500px;
+  }
 
   #navbar li{
     display: inline;

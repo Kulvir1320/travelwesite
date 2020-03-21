@@ -1,32 +1,7 @@
 
-// createDatabase();
+
 createObjectStores();
 
-
-
-
-
-function createDatabase(){
-
-  let openRequest = indexedDB.open("DB_traveldatabase", 1);
-
-openRequest.onupgradeneeded = function() {
-
-console.log("upgrade called")
-};
-
-openRequest.onerror = function() {
-
-    console.log("error called")
-};
-
-openRequest.onsuccess = function() {
-  //let db = openRequest.result;
-
-    console.log("success called")
-};
-
-}
 
 function createObjectStores(){
   let openRequest = indexedDB.open("DB_traveldatabase", 1);
@@ -35,11 +10,11 @@ openRequest.onupgradeneeded = function() {
 
 console.log("upgrade called")
 
-// add table cide ---
 let db = openRequest.result;
 
-  if (!db.objectStoreNames.contains('userdata')) { // if there's no "books" store
-    db.createObjectStore('userdata', {keyPath: 'id'}); // create it
+  if (!db.objectStoreNames.contains('userdata')) {
+
+    db.createObjectStore('userdata', {keyPath: 'id'});
   }
 
 
@@ -66,7 +41,7 @@ function registerUser(){
   let pass = document.getElementById('passwordsignup').value;
 
   if(firstname == "" & lastname == "" & pass == ""){
-    alert("please fill the required feilds");
+    alert("Please fill the required fields..");
   }else{
 
 
@@ -87,8 +62,7 @@ function registerUser(){
 
         db.onversionchange = function() {
         db.close();
-         };//ver change
-         // your code: add data to table
+         };
          let transaction = db.transaction("userdata", "readwrite");
          let t = transaction.objectStore("userdata");
 
@@ -140,7 +114,7 @@ function userlogIn(){
 
 
   if(uname == "" & p == ""){
-    alert("empty")
+    alert("Please fill the required feilds....")
   }else {
 
 
@@ -152,8 +126,8 @@ function userlogIn(){
 
        let db = openRequest.result;
 
-         if (!db.objectStoreNames.contains('userlogedin')) { // if there's no "books" store
-           db.createObjectStore('userlogedin', {keyPath: 'id'}); // create it
+         if (!db.objectStoreNames.contains('userlogedin')) {
+           db.createObjectStore('userlogedin', {keyPath: 'id'});
          }
     };
 
@@ -174,33 +148,22 @@ function userlogIn(){
          let transaction = db.transaction("userdata", "readwrite");
          let t = transaction.objectStore("userdata");
 
-         // let ltrans = db.transaction("userlogedin", "readwrite");
-         // let lt = ltrans.objectStore("userlogedin");
-         //
+
          let req = t.get(uname)
-         // let data={
-         //   id: uname,
-         //   lastname: ""
-         // }
-         //
-         // let r = lt.add(data);
+
 
          req.onsuccess = function() {
             console.log(req.result)
             var recieved = req.result
             if(recieved == null){
-              alert("user not registered!!!!")
+              alert("User not registered!!!!")
             }else if (p == recieved.password) {
 
 
                saveLoginUser(uname);
 
-
-
-
-
             }else {
-              alert("wrong password")
+              alert("Oops!!!  Wrong password")
             }
          };
 
@@ -245,7 +208,7 @@ openRequest.onsuccess = function() {
      db.close();
    };
 
-   // code to save login username
+
    let transaction = db.transaction("userdata", "readwrite");
    let t = transaction.objectStore("userdata");
 
@@ -253,17 +216,14 @@ openRequest.onsuccess = function() {
 
    r.onsuccess = function(){
 
-     alert("login succesful");
-    // window.location.href = "index.html";
+     window.location.href = "index.html"
 
+     alert("Login succesful!!!");
 
    };
 
 
-
-
-
-}// end of success
+}
 
 
 openRequest.onblocked = function() {
@@ -312,6 +272,12 @@ function bookhotelfunc(){
 
          r.onsuccess = function(){
            let reslt = r.result;
+
+           if(reslt == null){
+             alert("User not registered!!");
+           }else {
+
+
            let loginame = reslt.username;
            console.log(loginame);
 
@@ -325,11 +291,9 @@ function bookhotelfunc(){
              let inforeqs = inforesult.requests;
 
              if(hname == "" & hperson == "" & hotelin == "" & hotelout == ""){
-               alert("empty!!!!!!")
+               alert("Please fill the required fields!!")
              }else {
 
-               // let newreq = [hname,hperson,hotelin,hotelout];
-               // oldreq.push(newreq);
                inforeqs.push("Hotel Booked:" + hname + "<br> Persons:" + hperson+"<br> Check In:"+hotelin+"<br> Check Out:"
              + hotelout);
 
@@ -341,13 +305,11 @@ function bookhotelfunc(){
                 password: p,
                 requests: inforeqs
 
-              //   requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
-              // + hotelout]
              }
              let req = t.put(Newdata);
 
              req.onsuccess = function() {
-               alert("booking succesful")
+               alert("Booking succesful!!")
                document.getElementById('hotelname').value = ""
                document.getElementById('numperson').value = ""
                document.getElementById('hotelcheckin').value = ""
@@ -363,6 +325,8 @@ function bookhotelfunc(){
           };
 
            }
+
+         }
 
 
 
@@ -418,6 +382,12 @@ function bookcarfunc(){
 
          r.onsuccess = function(){
            let reslt = r.result;
+
+           if(reslt == null){
+             alert("User not registered!!" )
+           }else {
+
+
            let loginame = reslt.username;
            console.log(loginame);
 
@@ -431,11 +401,9 @@ function bookcarfunc(){
              let inforeqs = inforesult.requests;
 
              if(cname == "" & cperson == "" & carin == "" & carout == ""){
-               alert("empty!!!!!!")
+               alert("Please fill the required fields!!")
              }else {
 
-               // let newreq = [hname,hperson,hotelin,hotelout];
-               // oldreq.push(newreq);
                inforeqs.push("Car Booked:" + cname + "<br> Persons:" + cperson+"<br> Check In:"+carin+"<br> Check Out:"
              + carout);
 
@@ -447,13 +415,11 @@ function bookcarfunc(){
                 password: p,
                 requests: inforeqs
 
-              //   requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
-              // + hotelout]
              }
              let req = t.put(Newdata);
 
              req.onsuccess = function() {
-               alert("booking succesful")
+               alert("Booking succesful..")
                document.getElementById('carname').value = ""
                document.getElementById('carperson').value = ""
                document.getElementById('carcheckin').value = ""
@@ -470,7 +436,7 @@ function bookcarfunc(){
            }
 
 
-
+}
 
 
          }
@@ -523,6 +489,12 @@ function bookairlinefunc(){
 
          r.onsuccess = function(){
            let reslt = r.result;
+
+           if(reslt == null){
+             alert("User not registered!!")
+           }else {
+
+
            let loginame = reslt.username;
            console.log(loginame);
 
@@ -536,11 +508,9 @@ function bookairlinefunc(){
              let inforeqs = inforesult.requests;
 
              if(aname == "" & aperson == "" & airin == "" & airout == ""){
-               alert("empty!!!!!!")
+               alert("Please fill the required fields!!")
              }else {
 
-               // let newreq = [hname,hperson,hotelin,hotelout];
-               // oldreq.push(newreq);
                inforeqs.push("Airline:" + aname + "<br> Passenger:" + aperson+"<br> Check In:"+airin+"<br> Check Out:"
              + airout);
 
@@ -552,13 +522,11 @@ function bookairlinefunc(){
                 password: p,
                 requests: inforeqs
 
-              //   requests: ["Hotel Booked:" + hname + "\n Persons:" + hperson+"\n Check In:"+hotelin+"\n Check Out:"
-              // + hotelout]
              }
              let req = t.put(Newdata);
 
              req.onsuccess = function() {
-               alert("booking succesful")
+               alert("Booking succesful..")
                document.getElementById('airlinename').value = ""
                document.getElementById('numpassenger').value = ""
                document.getElementById('aircheckin').value = ""
@@ -575,7 +543,7 @@ function bookairlinefunc(){
            }
 
 
-
+}
 
 
          }

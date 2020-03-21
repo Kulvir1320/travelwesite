@@ -80,6 +80,7 @@ body{
 }
 
 .hotelDetails label{
+  padding-left: 1em;
   font-size: 1em;
   font-style: oblique;
   font-weight: bolder;
