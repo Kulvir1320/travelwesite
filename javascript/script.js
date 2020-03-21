@@ -612,6 +612,7 @@ function showmylist(){
            r.onsuccess = function(){
              let reslt = r.result;
              let loginame = reslt.username;
+
              console.log(loginame);
 
              let info = t.get(loginame);
@@ -634,6 +635,7 @@ function showmylist(){
 
              document.getElementById("userlist").innerHTML = code;
              }
+
            }
 
       }
