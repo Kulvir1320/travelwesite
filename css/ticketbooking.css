@@ -49,12 +49,19 @@ nav{
 
 }
 nav li{
-  float: left;
-  display: inline;
-  margin-left: 0;
-  font-size: 1.5em;
-  padding-left: 1%;
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0.4em;
+  background-image: radial-gradient(#e9967a, #ffa07a);
 
+
+
+}
+
+nav ul{
+  padding: 0;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 nav li a{
   color: #ffffff;
@@ -138,7 +145,7 @@ margin-bottom: 20px;
   /* position: absolute;
   top: 80%;
   left: 40%; */
-  margin-top: 45px;
+  margin-top: 2%;
   height: 200px;
   border-style: dotted;
 }
@@ -146,16 +153,17 @@ margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 2em;
 
+
 }
 .ticketsDetails label{
-  font-size: 1.5em;
+  font-size: 1em;
   font-style: oblique;
   font-weight: bolder;
   color: Black;
   text-shadow: #000000;
 }
 .ticketsDetails input{
-  font-size: 1em;
+  font-size: 0.5em;
   border-radius: 0.5em 0.5em;
 }
 .ticketsDetails button{
@@ -251,9 +259,9 @@ margin-bottom: 20px;
     display: none;
   }
 
-  .navigationtickets{
+  /* .navigationtickets{
     margin-top: 2%;
-  }
+  } */
   img{
     width: 100%;
     margin-top: 1%
@@ -261,37 +269,51 @@ margin-bottom: 20px;
 
   }
 
+  .ticketsDetails label{
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+    color: Black;
+    text-shadow: #000000;
+  }
+  .ticketsDetails input{
+    font-size: 1em;
+    border-radius: 0.5em 0.5em;
+  }
+  .ticketsDetails button{
+
+    margin-left: 40%;
+
+    font-size: 1.5em;
+    border-radius: 0.5em 0.5em;
+  }
 
   nav{
     display: inline;
-    /* position: absolute; */
-    /* top: 2%;
-    left: 2%; */
-
-
-  }
-  nav li{
     float: left;
+  }
+
+
+  nav li{
     display: inline;
-    margin-left: 2%;
-    font-size: 1.7em;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: #ff7f50;
+    background-image: #ffffff;
     border-radius: 2em 2em;
-    opacity: 90%;
-    margin-bottom: 20px;
-
-  }
-  nav li a{
-    color: #ffffff;
-    text-decoration: none;
-
   }
 
-  nav ul li :hover{
-    color: #1e90ff;
+  nav{
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+
+
   }
+
+
+
+
+
 
 
 
@@ -305,6 +327,7 @@ margin-bottom: 20px;
   .form {
     margin-top: 20px;
     margin-left: 2em;
+    mar
 
   }
 
@@ -347,6 +370,24 @@ margin-bottom: 20px;
     display: inline;
   }
 
+  .ticketsDetails label{
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bolder;
+    color: Black;
+    text-shadow: #000000;
+  }
+  .ticketsDetails input{
+    font-size: 1em;
+    border-radius: 0.5em 0.5em;
+  }
+  .ticketsDetails button{
+
+    margin-left: 40%;
+
+    font-size: 1.5em;
+    border-radius: 0.5em 0.5em;
+  }
 
 
 
@@ -365,18 +406,17 @@ margin-bottom: 20px;
   nav{
     display: inline;
     position: absolute;
-    top: 2%;
-    left: 2%;
+    top: 1%;
+    left: 1%;
 
 
   }
   nav li{
-    float: left;
+
     display: inline;
-    margin-left: 2%;
+
     font-size: 1.7em;
-    padding-left: 1%;
-    padding-right: 1%;
+
     background-color: #ff7f50;
     border-radius: 2em 2em;
     opacity: 90%;
