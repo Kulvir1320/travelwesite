@@ -12,19 +12,20 @@
 body{
   background-image: radial-gradient(#e9967a, #ffa07a, #87ceeb, #4682b4);
 }
-.photo img {
+.photo section img {
   height: 100%;
   width: 100%;
+  margin-top: 5%;
 
 }
 
 .info {
-  background-color: HoneyDew;
+  background-color: #87ceeb;
   border-radius: 2em 2em;
   float: right;
   margin: 0 1.5%;
   width: 59%;
-  margin-top: 2%
+  margin-top: 6%
 }
 .info p {
   margin-left: 2em;
@@ -195,6 +196,10 @@ article h3 {
     border-radius: 0.5em 0.5em;
   }
 
+  .mobile{
+    display: none;
+  }
+
 
 
 
@@ -232,19 +237,12 @@ article h3 {
   }
 
 
-  .heading{
-    position: absolute;
 
-    /* position:static; */
-    top: 2%;
-    left: 30%;
-    opacity: 80%;
-  }
 
   .hotelDetails{
     position: absolute;
-    top: 60%;
-    left: 40%;
+    top: 40%;
+    left: 10%;
   }
 
   .hotelDetails label{
@@ -268,6 +266,15 @@ article h3 {
   }
   .s-m {
     clear: both;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  footer{
+    clear: both;
+
   }
 
 
