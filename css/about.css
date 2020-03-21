@@ -5,6 +5,7 @@ body {
 }
 .mobile {
   display: inline;
+  padding-bottom: 2%;
 }
 .desktop{
   display: none;
@@ -18,6 +19,7 @@ body {
 .icon-bar {
   float:left;
   width: 25%;
+  margin-bottom: 1%;
   /* color: #3498db; */
   background-color: #E0FFFF;
 }

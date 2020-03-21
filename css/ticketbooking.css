@@ -76,6 +76,8 @@ nav ul li :hover{
   border-radius: 0 5em 5em 5em;
   box-shadow: 1em 1em 1em #4c4f4d;
    background-image: radial-gradient(#b3daff, #ffe6cc);
+
+
 }
 .para1 h2 {
   text-align: center;
@@ -88,8 +90,10 @@ nav ul li :hover{
   clear: both;
   width: 80%;
   border-style: solid;
-  padding: 20px;
-  margin: auto;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
 
 }
 * {
@@ -131,8 +135,8 @@ nav ul li :hover{
     margin-top: -1em;
 }
 .ticketsDetails{
-  /* position: absolute; */
-  /* top: 80%;
+  /* position: absolute;
+  top: 80%;
   left: 40%; */
   height: 200px;
   border-style: dotted;
@@ -293,6 +297,7 @@ nav ul li :hover{
 
     height: 200px;
     border-style: dotted;
+
   }
   .form {
     margin-top: 20px;
@@ -332,10 +337,14 @@ nav ul li :hover{
   .desktop{
     display: inline;
 
+
   }
   .bannerdesktop {
     display: inline;
   }
+
+
+
 
 
   .navigationtickets{
@@ -384,8 +393,8 @@ nav ul li :hover{
 
   .ticketsDetails{
     position: absolute;
-    top: 80%;
-    left: 40%;
+    top: 40%;
+    left: 10%;
   }
 
   .ticketsDetails label{
