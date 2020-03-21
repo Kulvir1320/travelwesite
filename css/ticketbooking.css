@@ -70,13 +70,13 @@ nav ul li :hover{
 
 .para1{
 
-
+margin-top: 10px;
   width: 100%;
   border-style: double;
   border-radius: 0 5em 5em 5em;
   box-shadow: 1em 1em 1em #4c4f4d;
    background-image: radial-gradient(#b3daff, #ffe6cc);
-
+margin-bottom: 20px;
 
 }
 .para1 h2 {
@@ -93,7 +93,7 @@ nav ul li :hover{
   padding: 2%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 10%;
 
 }
 * {
@@ -138,12 +138,14 @@ nav ul li :hover{
   /* position: absolute;
   top: 80%;
   left: 40%; */
+  margin-top: 45px;
   height: 200px;
   border-style: dotted;
 }
 .form {
   margin-top: 20px;
   margin-left: 2em;
+
 }
 .ticketsDetails label{
   font-size: 1.5em;
@@ -157,10 +159,9 @@ nav ul li :hover{
   border-radius: 0.5em 0.5em;
 }
 .ticketsDetails button{
-  /* position: absolute; */
-  /* top: 50%; */
+
   margin-left: 40%;
-  /* left: 40%; */
+
   font-size: 1.5em;
   border-radius: 0.5em 0.5em;
 }
@@ -279,6 +280,7 @@ nav ul li :hover{
     background-color: #ff7f50;
     border-radius: 2em 2em;
     opacity: 90%;
+    margin-bottom: 20px;
 
   }
   nav li a{
@@ -294,14 +296,16 @@ nav ul li :hover{
 
 
   .ticketsDetails{
-
-    height: 200px;
+     clear: both;
+     height: 200px;
     border-style: dotted;
+    margin-bottom: 20px;
 
   }
   .form {
     margin-top: 20px;
     margin-left: 2em;
+
   }
 
   .ticketsDetails label{
